@@ -6,7 +6,10 @@
 body, html {
     height: 100%;
     margin: 0 auto;
-    overflow: scroll;
+}
+
+html {
+  overflow-y: scroll;
 }
 
 body {
