@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+@import "styles-variables";
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
 
 body, html {
     height: 100%;
@@ -14,7 +17,7 @@ a {
     text-decoration: none;
 }
 
-.container {
+.container-old {
     width: 80%;
     margin: 0 auto;
     padding: 1.3em;
@@ -24,12 +27,6 @@ a {
     a {
         color: white;
     }
-}
-
-section {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1em;
 }
 
 .content {

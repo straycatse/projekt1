@@ -1,33 +1,34 @@
-<div class="content">
-  <div class="col-half">
-    <div class="experience">
-      <h1>Erfarenhet</h1>
-      <ul *ngIf="experience">
-        <li *ngFor="let experience of experience.records">
-          <p><strong>{{ experience.company }}</strong><br/>
-          {{ experience.role }}</p>
-          <p>{{ experience.date_from }} - {{ experience.date_to }}</p>
-        </li>
-      </ul>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="experience">
+        <h1>Erfarenhet</h1>
+        <ul *ngIf="experience">
+          <li *ngFor="let experience of experience.records">
+            <p><strong>{{ experience.company }}</strong><br/>
+            {{ experience.role }}</p>
+            <p>{{ experience.date_from }} - {{ experience.date_to }}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="education">
+        <h1>Utbildning</h1>
+        <ul *ngIf="edu">
+          <li *ngFor="let edu of edu.records">
+            <p><strong>{{ edu.school }}</strong> - {{ edu.subject }}</p>
+            <p>{{ edu.date_from }} - {{ edu.date_to }}</p>
+          </li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h1>Kompetenser</h1>
+        <ul class="listSkill" *ngIf="skills">
+          <li class="" *ngFor="let skills of skills.records">
+            <p><strong>{{ skills.name }}</strong></p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div class="col-half">
-    <div class="education">
-      <h2>Utbildning</h2>
-      <ul *ngIf="edu">
-        <li *ngFor="let edu of edu.records">
-          <p><strong>{{ edu.school }}</strong> - {{ edu.subject }}</p>
-          <p>{{ edu.date_from }} - {{ edu.date_to }}</p>
-        </li>
-      </ul>
-    </div>
-    <div class="skills">
-      <h2>Kompetenser</h2>
-      <ul class="listSkill" *ngIf="skills">
-        <li class="recordSkill" *ngFor="let skills of skills.records">
-          <p><strong>{{ skills.name }}</strong></p>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
