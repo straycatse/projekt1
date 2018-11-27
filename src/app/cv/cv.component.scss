@@ -2,3 +2,28 @@
   width: 50%;
   float: left;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;padding: 0;
+
+    li {
+        background: rgb(238, 238, 238);
+        padding: 1em;
+        border-radius: 4px;
+        margin-bottom: 7px;
+        // display: grid;
+        // grid-template-columns: 60px auto;
+      }
+}
+
+.experience ul {
+  width: 90%;
+}
+
+.recordSkill {
+  width: 10%;
+  float: left;
+  margin-right: 7px;
+  text-align: center;
+}
