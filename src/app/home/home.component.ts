@@ -17,10 +17,5 @@ export class HomeComponent implements OnInit {
       this.users = data
       console.log(this.users)
     })
-
-    this.data.getEdu().subscribe(records => {
-      this.edu = records
-      console.log(this.edu)
-    })
   }
 }
