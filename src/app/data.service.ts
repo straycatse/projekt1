@@ -13,14 +13,14 @@ export class DataService {
   }
 
   getEdu() {
-    return this.http.get('http://localhost/projekt/simonsolberg-api/product/read.php');
+    return this.http.get('http://localhost/projekt/web-api/product/read.php');
   }
 
   getSkills() {
-    return this.http.get('http://localhost/projekt/simonsolberg-api/skill/read.php');
+    return this.http.get('http://localhost/projekt/web-api/skill/read.php');
   }
 
   getExperience() {
-    return this.http.get('http://localhost/projekt/simonsolberg-api/experience/read.php');
+    return this.http.get('http://localhost/projekt/web-api/experience/read.php');
   }
 }
